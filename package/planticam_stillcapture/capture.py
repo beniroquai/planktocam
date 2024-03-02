@@ -61,6 +61,7 @@ def upload_file(config, date):
 
 
 def capture_image(cam, settings):
+	# TODO: Here we need to add the Illumination using the neopixel
 	cam.resolution = (int(settings['resolution_x']), int(settings['resolution_y']))
 	cam.rotation = int(settings.get('rotation', '0'))
 	aspect_ratio = cam.resolution[1] / cam.resolution[0]
